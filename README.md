@@ -25,4 +25,4 @@ Your users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### Checkit out on: 
+### Checkit out on: https://single-price-grid-component-orangel.netlify.app/
