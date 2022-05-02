@@ -44,6 +44,7 @@ main {
 
 .join_title {
     color: var(--Cyan);
+    font-size: 3rem;
 }
 
 .join_subtitle {
@@ -105,6 +106,7 @@ button {
 
 @media (min-width: 900px) {
     main {
+        height: 575px;
         margin-top: 100px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
