@@ -1,0 +1,131 @@
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join, .sub, .why {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    padding-left: 40px;
+}
+
+.join {
+    background-color: white;
+}
+
+.join_title {
+    color: var(--Cyan);
+}
+
+.join_subtitle {
+    color: var(--Bright-Yellow);
+}
+
+.join_info {
+    color: var(--Grayish-Blue);
+}
+
+.sub {
+    background-color: var(--Cyan);
+    display: flex;
+    flex-direction: column;
+}
+
+.sub_title {
+    color: white;
+}
+
+.sub_price {
+    color: white;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.sub_month {
+    color: hsl(178, 41%, 82%);
+    font-size: 1.4rem;
+}
+
+.sub_info {
+    color: white;
+}
+
+button {
+    width: 80%;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.why {
+    background-color: hsl(179, 53%, 48%);
+}
+
+.why_title {
+    color: white;
+}
+
+.why_info {
+    color: var(--Light-Gray);
+}
+
+@media (min-width: 900px) {
+    main {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        line-height: 2.8rem;
+    }
+
+    .join {
+        grid-area: 1 / 1 / 2 / 3;
+        max-width: 100%;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .sub {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .why {
+        max-width: 100%;
+        height: 100%;
+    }
+}
